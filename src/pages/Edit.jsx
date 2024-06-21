@@ -5,7 +5,11 @@ import { useRouteLoaderData } from 'react-router-dom'
 const Edit = () => {
   const post = useRouteLoaderData("post-detail");
   return (
-    <><CreateForm header={"Edit your posts now"} btnText={"Update Post"} oldCreateData={post}/></>
+    <><CreateForm header={"Edit your posts now"} 
+    btnText={"Update Post"} 
+    oldCreateData={post}
+    method={"patch"}/>
+    </>
   )
 }
 
